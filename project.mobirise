@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "uniwsap",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/uniswap-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://uniwsap.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://uniwsap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "0j0klmp3m1",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Uniswap - Web and Wallets | Uniswap",
+        "meta_descr": "Uniswap, the popular decentralized exchange that lets users trade cryptocurrencies directly from their wallets using automated liquidity pools.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://app.uniswap.org/\"><img src=\"@PROJECT_PATH@/assets/images/uniswap.png\" alt=\"uniswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vdhqtLkyXr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>- Web and Wallets | Uniswap</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap</a>: The Engine of Decentralized Crypto Trading</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the evolving landscape of decentralized finance (DeFi), few protocols have had as much impact as Uniswap. Built on the Ethereum blockchain, Uniswap revolutionized how cryptocurrencies are traded by eliminating centralized intermediaries and enabling peer-to-peer token swaps through automated smart contracts. Since its launch in 2018, it has become one of the most influential decentralized exchanges (DEXs) in the crypto ecosystem.<br><br><b>What Is <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>?<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>is a <b>decentralized exchange protocol</b> that allows users to trade cryptocurrencies directly from their wallets without relying on centralized platforms. Instead of using traditional order books like centralized exchanges, Uniswap operates through <b>automated liquidity pools</b> powered by smart contracts.<br><br>The protocol was created by Hayden Adams and inspired by ideas proposed by Vitalik Buterin. Its goal was to create an open and permissionless trading system where anyone could swap tokens, provide liquidity, or build applications on top of the protocol.<br><br><b>How Uniswap Works<br></b>At the heart of <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>is the <b>Automated Market Maker (AMM)</b> model. Instead of matching buyers and sellers, the system uses liquidity pools filled with token pairs. Users trade against these pools rather than against other traders.<br><br><b>Key components include:<br>1. Liquidity Pools :-</b><br>Liquidity pools are collections of two tokens locked in a smart contract. For example, a pool may contain <b>ETH and USDC</b>. These pools provide the liquidity needed for trading.<br><br>Users known as <b>liquidity providers (LPs)</b> deposit equal values of both tokens into a pool and earn a share of the trading fees.<br><br><b>2. Automated Pricing :-<br></b>Uniswap uses a mathematical formula called the <b>constant product formula:</b><br>x × y = k<br>Where:<br><b>. x</b> = amount of token A<br><b>. y</b> = amount of token B<br><b>. k</b> = constant value<br><br>This formula automatically determines token prices based on supply and demand within the pool.<br><br><b>3. Smart Contracts :-<br></b>All transactions on <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>are executed through smart contracts on the Ethereum blockchain. This ensures transparency and removes the need for centralized control.<br><br><b>The Role of the UNI Token<br></b>In 2020, <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>introduced its governance token, UNI. The token allows holders to participate in the governance of the protocol.<br><br>UNI holders can vote on proposals such as:<br>. Protocol upgrades<br>. Fee structures<br>. Treasury spending<br>. Future development directions<br><br>This governance model gives the community influence over how the protocol evolves.<br><br><b>Major Versions of Uniswap<br></b>The protocol has evolved through several major upgrades:<br><br><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>V1<br></b>The original version introduced the AMM model but supported only ETH token pairs.<br><br><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>V2<br></b>Released in 2020, this version enabled direct ERC-20 token-to-token swaps and improved pricing mechanisms.<br><br><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>V3<br></b>Launched in 2021, Uniswap V3 introduced concentrated liquidity, allowing liquidity providers to allocate funds within specific price ranges. This dramatically increased capital efficiency.<br><br><b>Advantages of Uniswap<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>offers several benefits compared to traditional exchanges:<br><br><b>1. Permissionless Access<br></b>Anyone with a crypto wallet can trade without registration or identity verification.<br><br><b>2. Non-custodial Trading<br></b>Users maintain control of their funds because trades occur directly from their wallets.<br><br><b>3. Transparency<br></b>All transactions and liquidity pools are visible on the blockchain.<br><br><b>4. Innovation Platform<br></b>Many DeFi projects launch their tokens through Uniswap due to its open and accessible infrastructure.<br><br><b>Risks and Challenges<br></b>Despite its advantages, Uniswap also presents certain risks:<br><br><b>. Impermanent loss</b> for liquidity providers<br><b>. Smart contract vulnerabilities</b><br><b>. High gas fees </b>during network congestion on Ethereum<br><b>. Scam or low-quality tokens</b> being listed due to permissionless listings<br>Users must conduct proper research before interacting with new tokens or liquidity pools.<br><br><b>Uniswap’s Impact on DeFi<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>has played a critical role in the growth of decentralized finance. By demonstrating that markets can operate without centralized order books, it paved the way for many other AMM-based exchanges.<br><br>Its model has inspired competitors such as SushiSwap and PancakeSwap, as well as numerous innovations across the DeFi sector.<br><br><b>The Future of Uniswap<br></b>As DeFi continues to expand, Uniswap is exploring improvements such as:<br><br><b>. </b>Layer-2 scaling integrations<br><b>. </b>Cross-chain liquidity solutions<br><b>. </b>Enhanced liquidity provider tools<br><b>.</b> Further governance decentralization<br><br>With billions of dollars in liquidity and a vibrant developer ecosystem, Uniswap remains one of the most influential infrastructures in the decentralized financial world.<br><br><b>✅ Conclusion<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>has fundamentally transformed cryptocurrency trading by introducing automated market makers and decentralized liquidity pools. Its open, transparent, and permissionless approach has made it a cornerstone of the DeFi movement. As blockchain technology advances, Uniswap is likely to remain a key platform shaping the future of decentralized finance.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vdhquJUfZb",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
